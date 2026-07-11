@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Incontri ed eventi — autismo ad Arma di Taggia e Imperia | Altre Menti</title>
-  <meta name="description" content="Calendario degli incontri sull'autismo organizzati da Altre Menti ad Arma di Taggia (Imperia, Liguria): appuntamenti con psicologi, educatori, terapisti e ricercatori. Ingresso libero, iscrizione online.">
+  <meta name="description" content="Calendario degli incontri sull'autismo organizzati da Altre Menti ad Arma di Taggia (Imperia, Liguria): appuntamenti con psicologi, educatori, terapisti e ricercatori. Ingresso libero e gratuito.">
   <link rel="stylesheet" href="assets/style.css">
-  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/logo.png" type="image/png">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -45,7 +45,7 @@
   </div>
   <div class="contenitore intestazione">
     <a class="marchio" href="index.html">
-      <img class="logo-header" src="assets/logo.svg" alt="" width="64" height="64">
+      <span class="logo-tondo" aria-hidden="true"><img src="assets/logo.png" alt=""></span>
       <span class="nome">Altre Menti<span class="payoff">Incontro · Idee · Futuro</span></span>
     </a>
     <button id="apri-menu" class="apri-menu" aria-expanded="false" aria-controls="nav-principale">Menu ☰</button>
@@ -54,7 +54,6 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="chi-siamo.html">Chi siamo</a></li>
         <li><a href="incontri.html" aria-current="page">Incontri ed eventi</a></li>
-        <li><a href="esperti.html">Esperti e relatori</a></li>
         <li><a href="risorse.html">Risorse</a></li>
         <li><a href="contatti.html">Contatti</a></li>
         <li><a href="sostieni.html">Sostienici</a></li>
@@ -87,7 +86,6 @@
             <li><strong>Relatore:</strong> <mark class="segnaposto">[DA COMPLETARE: nome ed esperienza del relatore]</mark></li>
           </ul>
           <p><mark class="segnaposto">[DA COMPLETARE: descrizione dell'incontro, tema trattato, a chi è rivolto]</mark></p>
-          <p><a class="btn btn-blu" href="#iscrizione">Iscriviti a questo incontro</a></p>
         </div>
       </article>
       <article class="evento">
@@ -101,53 +99,11 @@
             <li><strong>Relatore:</strong> <mark class="segnaposto">[DA COMPLETARE: nome ed esperienza del relatore]</mark></li>
           </ul>
           <p><mark class="segnaposto">[DA COMPLETARE: descrizione dell'incontro, tema trattato, a chi è rivolto]</mark></p>
-          <p><a class="btn btn-blu" href="#iscrizione">Iscriviti a questo incontro</a></p>
         </div>
       </article>
       <div class="riquadro">
         <p><strong>Nuovi incontri in preparazione.</strong> Le date dei prossimi appuntamenti con esperti del settore saranno pubblicate qui appena confermate. <mark class="segnaposto">[DA COMPLETARE: aggiungere gli eventi man mano che vengono confermati]</mark></p>
       </div>
-    </div>
-  </section>
-
-  <section class="blocco alterna" aria-labelledby="titolo-iscrizione">
-    <div class="contenitore">
-      <h2 id="titolo-iscrizione">Iscriviti a un incontro</h2>
-      <p class="intro-sezione">L'ingresso è libero, ma l'iscrizione ci aiuta a organizzare al meglio gli spazi. Compila il modulo: riceverai una conferma via email.</p>
-      <form class="modulo" id="iscrizione" action="#" method="post" novalidate>
-        <div class="campo">
-          <label for="isc-nome">Nome e cognome <span aria-hidden="true">*</span></label>
-          <input type="text" id="isc-nome" name="nome" required autocomplete="name">
-        </div>
-        <div class="campo">
-          <label for="isc-email">Email <span aria-hidden="true">*</span></label>
-          <p class="aiuto" id="isc-email-aiuto">La useremo solo per confermarti l'iscrizione.</p>
-          <input type="email" id="isc-email" name="email" required autocomplete="email" aria-describedby="isc-email-aiuto">
-        </div>
-        <div class="campo">
-          <label for="isc-evento">Incontro a cui vuoi partecipare <span aria-hidden="true">*</span></label>
-          <select id="isc-evento" name="evento" required>
-            <option value="">Scegli un incontro</option>
-            <option value="incontro-1">[DA COMPLETARE: titolo incontro 1]</option>
-            <option value="incontro-2">[DA COMPLETARE: titolo incontro 2]</option>
-          </select>
-        </div>
-        <div class="campo">
-          <label for="isc-persone">Numero di persone</label>
-          <input type="number" id="isc-persone" name="persone" min="1" max="10" value="1">
-        </div>
-        <div class="campo">
-          <label for="isc-note">Esigenze di accessibilità o note</label>
-          <p class="aiuto" id="isc-note-aiuto">Ad esempio: posti riservati, esigenze sensoriali, accompagnatori. Faremo il possibile per accoglierti al meglio.</p>
-          <textarea id="isc-note" name="note" rows="3" aria-describedby="isc-note-aiuto"></textarea>
-        </div>
-        <div class="campo-scelta">
-          <input type="checkbox" id="isc-privacy" name="privacy" required>
-          <label for="isc-privacy">Ho letto l'<a href="privacy.html">informativa privacy</a> e acconsento al trattamento dei dati per gestire l'iscrizione. <span aria-hidden="true">*</span></label>
-        </div>
-        <button type="submit" class="btn btn-blu">Invia iscrizione</button>
-        <p class="messaggio-ok" role="status" tabindex="-1" hidden>Grazie! La tua iscrizione è stata registrata. Riceverai una conferma via email. <mark class="segnaposto">[DA COMPLETARE: collegare il modulo a un servizio di invio reale]</mark></p>
-      </form>
     </div>
   </section>
 
@@ -208,9 +164,9 @@
       <div>
         <h2>Contatti</h2>
         <ul>
-          <li>Email: <mark class="segnaposto">[DA COMPLETARE]</mark></li>
-          <li>Telefono: <mark class="segnaposto">[DA COMPLETARE]</mark></li>
-          <li>Social: <mark class="segnaposto">[DA COMPLETARE: link Facebook / Instagram]</mark></li>
+          <li>Email: <a href="mailto:altrementi2026@gmail.com">altrementi2026@gmail.com</a></li>
+          <li>Telefono: <a href="tel:+393288326703">+39 328 832 6703</a></li>
+          <li>Instagram: <a href="https://www.instagram.com/altrementi_taggia">@altrementi_taggia</a></li>
         </ul>
       </div>
     </div>

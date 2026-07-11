@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contatti — Altre Menti, Arma di Taggia (IM)</title>
-  <meta name="description" content="Contatta l'associazione Altre Menti di Arma di Taggia (Imperia): modulo accessibile, email, telefono e mappa. Rispondiamo a famiglie, professionisti e cittadini.">
+  <meta name="description" content="Contatta l'associazione Altre Menti di Arma di Taggia (Imperia): modulo accessibile ed email. Rispondiamo a famiglie, professionisti e cittadini.">
   <link rel="stylesheet" href="assets/style.css">
-  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/logo.png" type="image/png">
 </head>
 <body>
 <a class="salta-contenuto" href="#contenuto">Salta al contenuto principale</a>
@@ -20,7 +20,7 @@
   </div>
   <div class="contenitore intestazione">
     <a class="marchio" href="index.html">
-      <img class="logo-header" src="assets/logo.svg" alt="" width="64" height="64">
+      <span class="logo-tondo" aria-hidden="true"><img src="assets/logo.png" alt=""></span>
       <span class="nome">Altre Menti<span class="payoff">Incontro · Idee · Futuro</span></span>
     </a>
     <button id="apri-menu" class="apri-menu" aria-expanded="false" aria-controls="nav-principale">Menu ☰</button>
@@ -29,7 +29,6 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="chi-siamo.html">Chi siamo</a></li>
         <li><a href="incontri.html">Incontri ed eventi</a></li>
-        <li><a href="esperti.html">Esperti e relatori</a></li>
         <li><a href="risorse.html">Risorse</a></li>
         <li><a href="contatti.html" aria-current="page">Contatti</a></li>
         <li><a href="sostieni.html">Sostienici</a></li>
@@ -52,7 +51,13 @@
       <div class="griglia-2">
         <div>
           <h2 id="titolo-form">Scrivici un messaggio</h2>
-          <form class="modulo" action="#" method="post" novalidate>
+          <form class="modulo" action="https://formsubmit.co/altrementi2026@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Sito Altre Menti — nuovo messaggio dal modulo contatti">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://lucaprinetti-del.github.io/grazie.html">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" aria-hidden="true" autocomplete="off">
+
             <div class="campo">
               <label for="con-nome">Nome e cognome <span aria-hidden="true">*</span></label>
               <input type="text" id="con-nome" name="nome" required autocomplete="name">
@@ -80,21 +85,16 @@
               <label for="con-privacy">Ho letto l'<a href="privacy.html">informativa privacy</a> e acconsento al trattamento dei dati per rispondere alla mia richiesta. <span aria-hidden="true">*</span></label>
             </div>
             <button type="submit" class="btn btn-blu">Invia messaggio</button>
-            <p class="messaggio-ok" role="status" tabindex="-1" hidden>Grazie! Il tuo messaggio è stato inviato. Ti risponderemo al più presto. <mark class="segnaposto">[DA COMPLETARE: collegare il modulo a un servizio di invio reale]</mark></p>
           </form>
         </div>
         <div>
           <h2>Recapiti</h2>
           <ul>
-            <li><strong>Email:</strong> <mark class="segnaposto">[DA COMPLETARE]</mark></li>
-            <li><strong>Telefono:</strong> <mark class="segnaposto">[DA COMPLETARE]</mark></li>
-            <li><strong>Sede:</strong> Arma di Taggia (IM) — <mark class="segnaposto">[DA COMPLETARE: indirizzo completo]</mark></li>
-            <li><strong>Facebook:</strong> <mark class="segnaposto">[DA COMPLETARE]</mark></li>
-            <li><strong>Instagram:</strong> <mark class="segnaposto">[DA COMPLETARE]</mark></li>
+            <li><strong>Email:</strong> <a href="mailto:altrementi2026@gmail.com">altrementi2026@gmail.com</a></li>
+            <li><strong>Telefono:</strong> <a href="tel:+393288326703">+39 328 832 6703</a></li>
+            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/altrementi_taggia">@altrementi_taggia</a></li>
           </ul>
-          <h2>Dove siamo</h2>
-          <iframe class="mappa" src="https://www.openstreetmap.org/export/embed.html?bbox=7.8300%2C43.8150%2C7.9050%2C43.8550&amp;layer=mapnik&amp;marker=43.8360%2C7.8680" title="Mappa di Arma di Taggia (Imperia). La sede dell'associazione è indicata con un segnaposto." loading="lazy"></iframe>
-          <p><a href="https://www.openstreetmap.org/?mlat=43.836&amp;mlon=7.868#map=15/43.836/7.868">Apri la mappa in una pagina dedicata (OpenStreetMap)</a></p>
+          <p>Operiamo ad Arma di Taggia (IM), in Liguria. Al momento non abbiamo una sede fissa: gli incontri si svolgono in spazi del territorio, indicati di volta in volta nella pagina di ogni evento.</p>
         </div>
       </div>
     </div>
@@ -122,9 +122,9 @@
       <div>
         <h2>Contatti</h2>
         <ul>
-          <li>Email: <mark class="segnaposto">[DA COMPLETARE]</mark></li>
-          <li>Telefono: <mark class="segnaposto">[DA COMPLETARE]</mark></li>
-          <li>Social: <mark class="segnaposto">[DA COMPLETARE: link Facebook / Instagram]</mark></li>
+          <li>Email: <a href="mailto:altrementi2026@gmail.com">altrementi2026@gmail.com</a></li>
+          <li>Telefono: <a href="tel:+393288326703">+39 328 832 6703</a></li>
+          <li>Instagram: <a href="https://www.instagram.com/altrementi_taggia">@altrementi_taggia</a></li>
         </ul>
       </div>
     </div>
