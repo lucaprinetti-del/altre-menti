@@ -96,24 +96,6 @@
       });
     }
 
-    /* ---------- Moduli (demo: nessun invio reale) ----------
-       [DA COMPLETARE] Collegare a un servizio reale
-       (es. Formspree, Netlify Forms o backend proprio). */
-    document.querySelectorAll("form.modulo").forEach(function (form) {
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        if (!form.reportValidity()) return;
-        var msg = form.querySelector(".messaggio-ok");
-        if (msg) {
-          msg.hidden = false;
-          msg.focus();
-        }
-        form.querySelectorAll("input, textarea, select, button[type=submit]").forEach(function (el) {
-          el.disabled = true;
-        });
-      });
-    });
-
     /* ---------- Anno corrente nel footer ---------- */
     document.querySelectorAll(".anno-corrente").forEach(function (el) {
       el.textContent = new Date().getFullYear();
