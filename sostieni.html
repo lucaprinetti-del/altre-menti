@@ -80,7 +80,13 @@
     <div class="contenitore">
       <h2 id="titolo-modulo-socio">Richiesta di adesione</h2>
       <p class="intro-sezione">Compila il modulo: ti ricontatteremo con le informazioni per completare l'iscrizione. <mark class="segnaposto">[DA COMPLETARE: verificare la procedura di ammissione prevista dallo statuto]</mark></p>
-      <form class="modulo" id="modulo-socio" action="#" method="post" novalidate>
+      <form class="modulo" id="modulo-socio" action="https://formsubmit.co/altrementi2026@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Sito Altre Menti — nuova richiesta di adesione (socio)">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://lucaprinetti-del.github.io/grazie.html">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" aria-hidden="true" autocomplete="off">
+
         <div class="campo">
           <label for="soc-nome">Nome e cognome <span aria-hidden="true">*</span></label>
           <input type="text" id="soc-nome" name="nome" required autocomplete="name">
@@ -113,7 +119,6 @@
           <label for="soc-privacy">Ho letto l'<a href="privacy.html">informativa privacy</a> e acconsento al trattamento dei dati per gestire la richiesta di adesione. <span aria-hidden="true">*</span></label>
         </div>
         <button type="submit" class="btn btn-blu">Invia richiesta</button>
-        <p class="messaggio-ok" role="status" tabindex="-1" hidden>Grazie! Abbiamo ricevuto la tua richiesta e ti ricontatteremo presto. <mark class="segnaposto">[DA COMPLETARE: collegare il modulo a un servizio di invio reale]</mark></p>
       </form>
     </div>
   </section>

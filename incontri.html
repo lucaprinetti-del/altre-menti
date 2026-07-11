@@ -114,7 +114,13 @@
     <div class="contenitore">
       <h2 id="titolo-iscrizione">Iscriviti a un incontro</h2>
       <p class="intro-sezione">L'ingresso è libero, ma l'iscrizione ci aiuta a organizzare al meglio gli spazi. Compila il modulo: riceverai una conferma via email.</p>
-      <form class="modulo" id="iscrizione" action="#" method="post" novalidate>
+      <form class="modulo" id="iscrizione" action="https://formsubmit.co/altrementi2026@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Sito Altre Menti — nuova iscrizione a un incontro">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://lucaprinetti-del.github.io/grazie.html">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" aria-hidden="true" autocomplete="off">
+
         <div class="campo">
           <label for="isc-nome">Nome e cognome <span aria-hidden="true">*</span></label>
           <input type="text" id="isc-nome" name="nome" required autocomplete="name">
@@ -146,7 +152,6 @@
           <label for="isc-privacy">Ho letto l'<a href="privacy.html">informativa privacy</a> e acconsento al trattamento dei dati per gestire l'iscrizione. <span aria-hidden="true">*</span></label>
         </div>
         <button type="submit" class="btn btn-blu">Invia iscrizione</button>
-        <p class="messaggio-ok" role="status" tabindex="-1" hidden>Grazie! La tua iscrizione è stata registrata. Riceverai una conferma via email. <mark class="segnaposto">[DA COMPLETARE: collegare il modulo a un servizio di invio reale]</mark></p>
       </form>
     </div>
   </section>
