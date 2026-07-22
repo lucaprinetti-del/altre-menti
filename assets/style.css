@@ -38,7 +38,7 @@ html.alto-contrasto {
   --focus: #0000CC;
 }
 html.alto-contrasto a { text-decoration: underline; }
-html.alto-contrasto img.logo-header { filter: grayscale(1) contrast(1.4); }
+html.alto-contrasto .logo-tondo img { filter: grayscale(1) contrast(1.4); }
 
 html.riduci-animazioni *,
 html.riduci-animazioni *::before,
@@ -128,7 +128,7 @@ header.sito {
   gap: 1rem; padding: 0.9rem 0; flex-wrap: wrap;
 }
 .marchio { display: flex; align-items: center; gap: 0.8rem; text-decoration: none; }
-.marchio img { width: 64px; height: 64px; }
+
 .marchio .nome {
   font-family: var(--font-titoli); font-weight: 700;
   font-size: 1.45rem; color: var(--blu); letter-spacing: 0.06em;
@@ -175,7 +175,7 @@ nav.principale a[aria-current="page"] {
   text-align: center;
   padding: 3.5rem 0 4rem;
 }
-.hero img { width: 130px; height: 130px; margin-bottom: 1.2rem; }
+
 .hero h1 { color: var(--bianco); font-size: 2.3rem; text-transform: uppercase; letter-spacing: 0.08em; }
 .hero .payoff-hero {
   color: #E8D5AC; /* oro chiaro: contrasto su blu ≈ 9:1 */
@@ -408,3 +408,18 @@ footer.sito li { margin-bottom: 0.4rem; }
 }
 .testata-pagina h1 { margin-bottom: 0.3rem; }
 .testata-pagina p { margin: 0; max-width: 700px; }
+
+/* ---------- Logo ufficiale (immagine quadrata su fondo blu, ritagliata in tondo) ---------- */
+.logo-tondo {
+  position: relative; display: inline-block; flex: none;
+  width: 64px; height: 64px;
+  border-radius: 50%; overflow: hidden;
+  background: var(--blu);
+}
+.logo-tondo img {
+  position: absolute; left: 50%; top: 50%;
+  width: 162%; height: auto;
+  transform: translate(-50%, -50%);
+}
+.logo-tondo--hero { width: 140px; height: 140px; margin-bottom: 1.2rem; }
+.logo-tondo--grande { width: 120px; height: 120px; }
